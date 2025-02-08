@@ -1,7 +1,11 @@
 # Drop of Honey 
 
 <p align="center">
-  <img src="https://cards.scryfall.io/large/front/2/6/26e090d4-e7fe-403c-9aca-05c1b45ed238.jpg?1562902230" width="500">
+  <img src="https://cards.scryfall.io/large/front/2/6/26e090d4-e7fe-403c-9aca-05c1b45ed238.jpg?1562902230" 
+       width="500" 
+       style="border-radius: 20px;">
+</p>
+
 
 ## Overview
 
