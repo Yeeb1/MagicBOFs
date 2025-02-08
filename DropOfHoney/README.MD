@@ -8,14 +8,28 @@ Sometimes, you may suspect certain Active Directory user accounts are “honey�
 - You discovered a user with **kerberoastable** SPNs but suspiciously never logs in.  
 - You want to **verify** whether a user is safe to use or might raise immediate flags.
 
-**DropOfHoney** is a Beacon Object File (BOF) that retrieves several key attributes from AD about a objects’s **sAMAccountName**, including:
-
-- **description**  
-- **sAMAccountName**  
-- **lastLogonTimestamp**  
-- **pwdLastSet**  
-- **whenCreated**  
-- **userAccountControl** (with a bitmask “decoding” of flags)
+User Example:
+```
+beacon> DropOfHoney o-kagachi
+[+] sAMAccountName: O-Kagachi
+[+] userAccountControl: 66048
+    bits: NORMAL_ACCOUNT DONT_EXPIRE_PASSWORD 
+    [Account is ENABLED]
+[+] lastLogonTimestamp: 2/8/2025 7:04:20 AM
+[+] pwdLastSet: 2/8/2025 7:04:14 AM
+[+] whenCreated: 10/19/2024 3:30:44 AM
+```
+Computer Example:
+```
+beacon> DropOfHoney fs01
+[+] sAMAccountName: FS01$
+[+] userAccountControl: 4096
+    bits: WORKSTATION_TRUST_ACCOUNT 
+    [Account is ENABLED]
+[+] lastLogonTimestamp: 10/20/2024 6:08:36 AM
+[+] pwdLastSet: 10/20/2024 6:40:40 AM
+[+] whenCreated: 10/19/2024 2:54:41 AM
+```
 
 By looking at these timestamps, account status, and any suspicious strings (like “Never logged in”), you can assess how risky it might be to use that account in your operations.
 
