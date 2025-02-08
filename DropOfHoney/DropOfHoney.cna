@@ -1,0 +1,45 @@
+# DropOfHoney-Bof
+# Author Yeeb 
+# https://github.com/Yeeb1
+
+beacon_command_register(
+    "DropOfHoney",
+    "Query an AD user's attributes to check for honeypot indicators",
+    "This command retrieves:\n" .
+    "- description\n" .
+    "- sAMAccountName\n" .
+    "- lastLogonTimestamp\n" .
+    "- pwdLastSet\n" .
+    "- whenCreated\n" .
+    "- userAccountControl (with flags)\n\n" .
+    "These details can reveal if an account is rarely used, newly created, or has suspicious flags—likely a honeypot or high-alert user.\n\n" .
+    "Usage:\n" .
+    "  DropOfHoney <sAMAccountName>\n\n" .
+    "Example:\n" .
+    "  DropOfHoney krbtgt\n\n"
+);
+
+alias DropOfHoney {
+    local('$bid $accountName');
+
+    $bid = $1;
+
+    $input = substr($0, 12);
+    @args = split(' ', $input);
+    $accountName = @args[0];
+
+    if ($accountName eq "") {
+        berror($bid, "Usage: DropOfHoney <sAMAccountName>");
+        return;
+    }
+
+    local('$handle $data');
+	$handle = openf(script_resource("DropOfHoney." . barch($bid) . ".o"));
+    $data   = readb($handle, -1);
+    closef($handle);
+
+    local('$arg_data');
+    $arg_data = bof_pack($bid, "Z", $accountName);
+
+    beacon_inline_execute($bid, $data, "go", $arg_data);
+}
