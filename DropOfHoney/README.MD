@@ -38,7 +38,7 @@ beacon> DropOfHoney fs01
 ```
 
 By looking at these timestamps, account status, and any suspicious strings (like “Never logged in”), you can assess how risky it might be to use that account in your operations.
-
+The BOF uses the ADSI (Active Directory Service Interfaces) API for LDAP queries.
 
 ## Interpreting the Results
 
