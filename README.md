@@ -12,5 +12,5 @@ Mapping BOFs to spells or enchantments from MTG just makes sense to me, and I’
 ## What’s Here?
 
 - **DropOfHoney**  
-  A BOF for triaging if a user account might be a honeypot in Active Directory using the ADSI (Active Directory Service Interfaces) API. Handy if you stumble upon suspicious credentials or an account that never logs on.
+  A BOF for triaging if a user account might be a honeypot in Active Directory using the ADSI (Active Directory Service Interfaces) API. Handy if you stumble upon suspicious credentials or roastable users.
 
