@@ -11,6 +11,11 @@ Mapping BOFs to spells or enchantments from MTG just makes sense to me, and I’
 
 ## What’s Here?
 
-- **DropOfHoney**  
+### **DropOfHoney**  
   A BOF for triaging if a user account might be a honeypot in Active Directory using the ADSI (Active Directory Service Interfaces) API. Handy if you stumble upon suspicious credentials or roastable users.
 
+### **WarpWorld**  
+A BOF that removes RDP session limits by dynamically patching `termsrv.dll` in memory—allowing multiple users to RDP into a machine at the same time.
+**Inspired by:**  
+- **Benjamin Delpy (@gentilkiwi)** for `ts::multirdp` in **Mimikatz**  
+- **@S3cur3Th1sSh1t** for porting the patch to [tspatch.c](https://gist.github.com/S3cur3Th1sSh1t/8294ec59d1ef38cba661697edcfacb9b)
