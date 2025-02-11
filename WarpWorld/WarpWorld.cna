@@ -1,0 +1,25 @@
+# WarpWorld-Bof
+# Author Yeeb
+# https://github.com/Yeeb1
+# s/o to @S3cur3Th1sSh1t https://gist.github.com/S3cur3Th1sSh1t/8294ec59d1ef38cba661697edcfacb9b
+
+
+beacon_command_register(
+    "WarpWorld",
+    "Patch TermService to allow multiple RDP sessions",
+    "This BOF modifies the memory of termsrv.dll to enable multiple RDP sessions on the system.\n" . 
+    "SeDebugPrivilege is nessecary. \n\n"
+);
+
+alias WarpWorld {
+    local('$bid');
+
+    $bid = $1;
+
+    local('$handle $data');
+    $handle = openf(script_resource("WarpWorld." . barch($bid) . ".o"));
+    $data   = readb($handle, -1);
+    closef($handle);
+
+    beacon_inline_execute($bid, $data, "go", "");
+}
