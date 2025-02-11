@@ -9,11 +9,11 @@ CFLAGS := -masm=intel
 all: $(OBJS)
 
 %.o: %.c
-	$(CC_x64) $(CFLAGS) -o ./$*.x64.o -c $<
-	$(STRIP_x64) --strip-unneeded ./$*.x64.o
+	$(CC_x64) $(CFLAGS) -o ../$*.x64.o -c $<
+	$(STRIP_x64) --strip-unneeded ../$*.x64.o
 
-	$(CC_x86) $(CFLAGS) -o ./$*.x86.o -DWOW64 -fno-leading-underscore -c $<
-	$(STRIP_x86) --strip-unneeded ./$*.x86.o
+	$(CC_x86) $(CFLAGS) -o ../$*.x86.o -DWOW64 -fno-leading-underscore -c $<
+	$(STRIP_x86) --strip-unneeded ../$*.x86.o
 
 clean:
-	rm ./*.o
+	rm ../*.o
