@@ -12,7 +12,7 @@ WarpWorld is a Beacon Object File that patches `termsrv.dll` in memory to enable
 
 
 ### Shoutouts
-- **Benjamin Delpy (@gentilkiwi)** for the original `ts::multird` feature in **Mimikatz**.  
+- **Benjamin Delpy (@gentilkiwi)** for the original `ts::multirdp` feature in **Mimikatz**.  
 - **[@S3cur3Th1sSh1t](https://github.com/S3cur3Th1sSh1t)** for his C implementation of [tspatch.c](https://gist.github.com/S3cur3Th1sSh1t/8294ec59d1ef38cba661697edcfacb9b).  
 
 ##  Usage
