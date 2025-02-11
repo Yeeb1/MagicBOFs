@@ -1,5 +1,7 @@
 # Drop of Honey 
 
+A BOF for triaging if a user account might be a honeypot in Active Directory using the ADSI (Active Directory Service Interfaces) API. Handy if you stumble upon suspicious credentials or roastable users.
+
 <p align="center">
   <img src="https://cards.scryfall.io/large/front/2/6/26e090d4-e7fe-403c-9aca-05c1b45ed238.jpg?1562902230" 
        width="300" 
