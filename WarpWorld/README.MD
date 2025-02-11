@@ -1,7 +1,7 @@
 
 # Warp World 
 
-WarpWorld is a Beacon Object File that patches `termsrv.dll` in memory to enable multiple concurrent RDP (Remote Desktop Protocol) sessions on Windows machines. On clients, Windows normally restricts RDP sessions to a single user at a time, this BOF removes that limitation.
+WarpWorld patches `termsrv.dll` in memory to enable multiple concurrent RDP (Remote Desktop Protocol) sessions on Windows machines. On clients, Windows normally restricts RDP sessions to a single user at a time, this BOF removes that limitation.
 
 
 <p align="center">
