@@ -7,7 +7,7 @@ Welcome to MagicBOFs, a small set of Beacon Object Files (BOFs) that I developed
 
 I've always thought it was interesting that [Sliver C2](https://github.com/BishopFox/sliver) was named after the [Slivers](https://mtg.fandom.com/wiki/Sliver) in MTG, even before I started playing the game. Now that I've gotten into *Magic: The Gathering*, I thought it would be fun to apply that theme to BOFs. 
 
-Mapping BOFs to spells or enchantments from MTG just makes sense to me, and I’ll be adding more to this collection over time. Each one will likely take on some flavor of the MTG world — nothing too serious, just a funny naming scheme to me.
+Mapping BOFs to spells or sorceries from MTG just makes sense to me, and I’ll be adding more to this collection over time. Each one will likely take on some flavor of the MTG world — nothing too serious, just a funny naming scheme to me.
 
 ## What’s Here?
 
@@ -16,6 +16,6 @@ Mapping BOFs to spells or enchantments from MTG just makes sense to me, and I’
 
 ### **WarpWorld**  
 A BOF that removes RDP session limits by dynamically patching `termsrv.dll` in memory—allowing multiple users to RDP into a machine at the same time.
-**Inspired by:**  
+**Shoutout to:**  
 - **Benjamin Delpy (@gentilkiwi)** for `ts::multirdp` in **Mimikatz**  
 - **@S3cur3Th1sSh1t** for porting the patch to [tspatch.c](https://gist.github.com/S3cur3Th1sSh1t/8294ec59d1ef38cba661697edcfacb9b)
