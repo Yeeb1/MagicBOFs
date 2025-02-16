@@ -4,7 +4,7 @@
 TappingAtTheWindow is a basic implementation of `curl` designed to peek at remote services without opening a SOCKS proxy. It enables operators to fetch TLS certificates, response headers, and HTML titles from remote web services, making it useful for reconnaissance, fingerprinting, and monitoring certificate changes for potential interception.
 
 <p align="center">
-  <img src="https://cards.scryfall.io/large/front/b/a/ba75dc52-7ab2-43ec-afac-0a9bcf24cde9.jpg?1636224817" 
+  <img src="https://cards.scryfall.io/large/front/f/a/fa428edc-4d7d-455a-9c9d-9dc71b502e64.jpg?1673160583" 
        width="300" 
 </p>
 
