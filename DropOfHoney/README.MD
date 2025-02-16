@@ -3,7 +3,7 @@
 A BOF for triaging if a user account might be a honeypot in Active Directory using the ADSI (Active Directory Service Interfaces) API. Handy if you stumble upon suspicious credentials or roastable users.
 
 <p align="center">
-  <img src="https://cards.scryfall.io/large/front/2/6/26e090d4-e7fe-403c-9aca-05c1b45ed238.jpg?1562902230" 
+  <img src="https://cards.scryfall.io/large/front/5/8/588f1bc5-2230-4437-8d5e-a18f6e55b390.jpg?1562915819" 
        width="300" 
 </p>
 
