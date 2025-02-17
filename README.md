@@ -1,6 +1,7 @@
 # MagicBOFs
 <p align="center">
-<img src="https://github.com/user-attachments/assets/ab04384a-ec9b-4be6-883f-9cf5897e9b82" width="400" />
+<img src="https://github.com/user-attachments/assets/bd471485-d076-4411-8aab-5f8fb1247d91" width="400" />
+
 
 
 Welcome to MagicBOFs, a small set of Beacon Object Files (BOFs) that I developed over the time with a [Magic: The Gathering](https://en.wikipedia.org/wiki/Magic:_The_Gathering) theme. 
