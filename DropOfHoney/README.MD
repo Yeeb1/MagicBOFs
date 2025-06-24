@@ -44,9 +44,17 @@ The BOF uses the ADSI (Active Directory Service Interfaces) API for LDAP queries
 
 ## Interpreting the Results
 
-- **lastLogonTimestamp** = `Never` or missing: indicates an account that has never been used. This is suspicious if you found credentials for it.  
-- **userAccountControl** = flags like `ACCOUNTDISABLE`, `SMARTCARD_REQUIRED`, `DONT_EXPIRE_PASSWORD`, etc. can tell you if the account is locked down or stands out as unusual.  
-- **description**: Sometimes credentials or notes are stored here. If it’s obviously “bait” or has a telling label, that’s suspicious.  
-- **whenCreated**: If it’s brand-new, that can also indicate a trap if you just discovered these credentials.  
+* **lastLogonTimestamp** = `Never` or missing: indicates an account that has never been used. This is suspicious if you found credentials for it.
+* **userAccountControl** = flags like `ACCOUNTDISABLE`, `SMARTCARD_REQUIRED`, `DONT_EXPIRE_PASSWORD`, etc. can tell you if the account is locked down or stands out as unusual.
+* **description**: Sometimes credentials or notes are stored here. If it’s obviously “bait” or has a telling label, that’s suspicious.
+* **whenCreated**: If it’s brand-new, that can also indicate a trap if you just discovered these credentials.
 
 A user with an **old creation date** and **never** logs in, or has a strange combination of `userAccountControl` flags, might be a honeypot or seldom-used “canary” account. If you see suspicious indicators, you may want to **avoid** using that account.
+
+There are some **public references on how honeypot accounts are typically configured**, which can help inform your detection strategy. Reviewing these can guide you on what attributes to look for:
+
+* [StrandJS honeyuser.md](https://github.com/strandjs/ClassLabs/blob/main/Tools/IntroClass/honeyuser/honeyuser.md) – a practical example for students and defenders to set up a decoy account.
+* [Arctic Wolf's guide on AD decoys](https://docs.arcticwolf.com/bundle/m_active_directory/page/configure_an_ad_decoy_account.html#create_an_ad_decoy_account) – official documentation on creating effective honeypot users in Active Directory.
+
+These can provide insight into typical naming conventions, group memberships, and configuration patterns defenders may use.
+
