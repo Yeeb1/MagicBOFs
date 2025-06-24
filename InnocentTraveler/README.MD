@@ -32,3 +32,7 @@ Output Example:
 [+] Added defaultuser to local admin group (Administratoren).
 ```
 
+<p align="center">
+  <img src="https://cards.scryfall.io/large/back/7/a/7a043975-59b4-490c-bf33-c08bd7b40bd3.jpg?1645227274" 
+       width="300" 
+</p>
