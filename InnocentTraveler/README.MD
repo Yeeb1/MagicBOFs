@@ -1,7 +1,7 @@
 
 # InnocentTraveler
 
-`InnocentTraveler` is a Beacon Object File (BOF) that creates a **local administrator** account on the host system. It can be used to persist access or establish additional footholds in post-exploitation scenarios.
+`InnocentTraveler` creates a **local administrator** account on the host system. It can be used to persist access or establish additional footholds in post-exploitation scenarios.
 
 If no password is supplied, a random password is generated automatically. This BOF uses native Windows APIs like `NetUserAdd` and `NetLocalGroupAddMembers` to perform account creation and privilege assignment.
 
