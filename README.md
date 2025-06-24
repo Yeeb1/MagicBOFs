@@ -15,6 +15,9 @@ Mapping BOFs to spells or sorceries from MTG just makes sense to me, and I’ll 
 ### **DropOfHoney**  
 A BOF for triaging if a user account might be a honeypot in Active Directory using the ADSI (Active Directory Service Interfaces) API. Handy if you stumble upon suspicious credentials or roastable users.
 
+### **InnocentTraveler** 
+A BOF that creates a new local administrator account with an optional or randomly generated password. Useful for establishing persistence or backup access during post-exploitation. Automatically resolves the localized name of the Administrators group.
+
 ### **TappingAtTheWindow**  
 A BOF that acts as a lightweight implementation of `curl`, allowing you to peek at remote services without opening a SOCKS proxy. It can be used to inspect HTTP response headers and TLS certificates, making it useful for detecting if certificates have been swapped out or intercepted.
 
