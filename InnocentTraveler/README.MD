@@ -17,7 +17,7 @@ If no password is supplied, a random password is generated automatically. This B
 * Allows optional password specification.
 * Generates random password if none provided.
 * Uses **Win32 API only**.
-* Works with both **inline-execute** and **CNA-invoked** workflows.
+* Works with both **inline-execute** and **CNA-invoked** workflows (packed arguments).
 
 Syntax:
 ```plaintext
