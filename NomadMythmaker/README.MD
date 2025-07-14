@@ -17,7 +17,7 @@ It is a lightweight  BOF adaptation of [django's](https://github.com/django-88) 
 * Randomizes **HTTP method** (`GET`, `HEAD`, `OPTIONS`) and **User-Agent** from a hardcoded list.
 * Supports **domain fronting** by specifying an optional front-host.
 
-> **Info**
+> [!CAUTION]
 > Ports are scanned sequentially (no multithreading).
 > Each closed port incurs \~1s timeout, so NomadMythmaker is intended for small-scale scans.
 
