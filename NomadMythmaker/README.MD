@@ -53,7 +53,7 @@ Closed: 2
 Time: 3.343 s
 ```
 
-#### Single IP
+#### IP Range
 ```plaintext
 [*] Parsing IP range: 192.168.178.65-192.168.178.70
 [*] Generated 6 IPs from range
