@@ -1,6 +1,6 @@
 # NomadMythmaker
 
-`NomadMythmaker` performs a **fast TCP port scan** and **HTTP banner grab** via  randomizing methods and User‑Agents to blend into normal traffic.
+`NomadMythmaker` performs a **TCP port scan** and **HTTP banner grab** via  randomizing methods and User‑Agents to blend into normal traffic.
 It is a lightweight  BOF adaptation of [django's](https://github.com/django-88)   [NomadScanner](https://github.com/django-88/NomadScanner).
 
 <p align="center">
